@@ -1,0 +1,76 @@
+.navbar, .footer {
+    background-color: rgba(16, 0, 160, .7);
+    color: white;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar__visible {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    padding: 0.5em;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.footer span {
+    color: orange;
+}
+
+.nav__link {
+    background-color: white;
+    padding: 0.1em 0.3em 0.1em 0.2em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px white;
+}
+
+sup {
+    font-size: 1.5rem;
+    color: orange;
+}
+
+.navbar__hidden {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    gap: 1.1rem;
+}
+
+.navbar__hidden img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar__hidden_links {
+    background-color: rgba(16, 0, 160, .7);
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+    padding-top: 0.5em;
+    gap: 1.5rem;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+}
+
+.navbar__hidden_links > * {
+    font-size: 2rem;
+}
